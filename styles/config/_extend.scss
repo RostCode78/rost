@@ -1,0 +1,192 @@
+/*===================
+        Flex
+===================*/
+
+%flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+%flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+%flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+%center-column-izq {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+%center-column-der {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+%center-row-izq {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+%center-row-der {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+
+/*=====================
+    Fonts - Spartan
+=====================*/
+
+%tittle-principal {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+%tittle-subtitulo {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+%tittle-seccion {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+%tittle-item {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+/*=====================
+    Fonts - Manrope
+=====================*/
+
+// SMALLER
+%smaller-light {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+%smaller-regular {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+%smaller-medium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+// SMALL
+%small-light {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+%small-regular {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+%small-medium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+// REGULAR
+%regular-light {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+%regular-regular {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+%regular-medium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+// MEDIUM
+%medium-light {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+%medium-regular {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+%medium-medium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+/*=========================
+    Background - Shadow
+=========================*/
+
+// Blur & Background
+%background-blur {
+    background-color: rgba(#191919, 0.8);
+    backdrop-filter: blur(4px);
+}
