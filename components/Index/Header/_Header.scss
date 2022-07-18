@@ -4,7 +4,7 @@
     @extend %flex-center;
     .fondo {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         position: absolute;
         z-index: 1;
         .degradado {
@@ -28,7 +28,7 @@
         }
         img {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
             position: absolute;
             z-index: 1;
@@ -40,6 +40,46 @@
         position: absolute;
         bottom: 24px;
         z-index: 2;
+        @media( max-width: 800px) {
+            width: 100%;
+            bottom: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .top {
+                height: 90vh!important;
+                display: flex;
+                justify-content: center!important;
+                align-items: center;
+                .texto {
+                    display: none;
+                }
+                .slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90%!important;
+                    height: 560px!important;
+                    .image-content {
+                        img {
+                            object-fit: contain!important;
+                        }
+                    }
+                }
+            }
+            .bottom {
+                height: 10vh!important;
+                flex-direction: column-reverse!important;
+                .texto {
+                    width: 95%!important;
+                    height: 60px!important;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
         .top {
             width: 100%;
             height: auto;
@@ -59,7 +99,6 @@
             .slide {
                 width: 720px;
                 height: 480px;
-                background-color: $yellow-400;
                 .image-content {
                     width: 100%;
                     height: 100%;
@@ -67,14 +106,14 @@
                     .overlay {
                         width: 100%;
                         height: 100%;
-                        background-color: rgba($grey-100, 0.2);
+                        background-color: rgba($grey-100, 0.1);
                         position: absolute;
                         z-index: 2;
                     }
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                         position: absolute;
                         z-index: 1;
                     }
@@ -100,11 +139,7 @@
                     border-radius: 50px;
                     margin-right: 12px;
                     background-color: $grey-600;
-                    &:first-child {
-                        width: 20px;
-                        height: 20px;
-                        background-color: $grey-800;
-                    }
+                    transition: all .2s ease-in-out;
                 }
             }
             .texto {
