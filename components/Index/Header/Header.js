@@ -87,7 +87,7 @@ const Header = () => {
             <div className="content">
                 <div className="top">
                     <div className="texto">
-                        <h1>HELLO FRIEND<br/>I'M <span>JHONATTAN</span><br/>FRONT-END DEV<br/><span>GEEK</span> & <span>FREAK</span></h1>
+                        <h1>HELLO FRIEND<br/>I'M <span>JHONATTAN</span><br/>FRONT-END DEV<br/><span>FREAK</span> & <span>GEEK</span></h1>
                     </div>
                     <div className="slide">
                         <Swiper
