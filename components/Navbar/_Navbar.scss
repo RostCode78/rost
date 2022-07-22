@@ -25,6 +25,7 @@
             border-radius: 50px;
             box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.15);
             box-shadow: -2px -2px 3px 0px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
             img {
                 width: 100%;
                 height: 100%;
@@ -38,6 +39,7 @@
         p {
             color: $grey-800;
             margin-left: 12px;
+            cursor: pointer;
             @extend %tittle-item;
         }
     }
