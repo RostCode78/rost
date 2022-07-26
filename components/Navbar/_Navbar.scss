@@ -39,6 +39,7 @@
         p {
             color: $grey-800;
             margin-left: 12px;
+            text-shadow: 1px 1px 10px $grey-100;
             cursor: pointer;
             @extend %tittle-item;
         }

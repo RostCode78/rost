@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Card from "../../Card/Card";
 
 const Skills = () => {
@@ -159,6 +160,14 @@ const Skills = () => {
         }
     ]
 
+    const [responsive, setResponsive] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 800) {
+            setResponsive(true);
+        }
+    }, []);
+
     return (
         <div className="container-skills">
             <div className="titulo">
@@ -166,12 +175,27 @@ const Skills = () => {
                 <p>Me mantengo en <span>continuo aprendizaje</span> y <span>mejorando mis habilidades</span>, aquí puedes ver lo que ya he realizado.</p>
             </div>
             <div className="content">
-                { Proyectos.slice(0, 6).map( e => (
-                    <Card
-                        key={ e.id }
-                        proyecto={ e }
-                    />
-                ))}
+                { responsive 
+                ?
+                    Proyectos.slice(0, 4).map( e => (
+                        <Card
+                            key={ e.id }
+                            proyecto={ e }
+                        />
+                    ))
+                :
+                    Proyectos.slice(0, 6).map( e => (
+                        <Card
+                            key={ e.id }
+                            proyecto={ e }
+                        />
+                    ))
+                }
+            </div>
+            <div className="boton">
+                <button>
+                    <p>Ver mas proyectos</p>
+                </button>
             </div>
         </div>
     )

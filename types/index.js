@@ -1,0 +1,1 @@
+export const TOMAR_PROYECTO = 'TOMAR_PROYECTO';
