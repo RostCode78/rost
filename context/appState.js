@@ -9,7 +9,21 @@ import {
 const AppState = props => {
 
     const initialState = {
-        proyectos: [],
+        proyectos: [
+            {
+                id: 1,
+                titulo: "Venus Sex Shop",
+                url_page: "https://www.tiendavenus.com/",
+                imagenes: [
+                    {
+                        id: 1,
+                        url_amigable: "https://i.imgur.com/xHgIwWG.png",
+                        alt: "Header"
+                    }
+                ],
+                subtitulo: ""
+            }
+        ],
         proyecto_actual: []
     }
 
