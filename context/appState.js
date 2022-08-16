@@ -74,7 +74,7 @@ const AppState = props => {
                 match: "odibo",
                 url_github: "",
                 nombre: "Odibo",
-                portada: "https://i.imgur.com/DqahcAl.png"
+                portada: "https://i.imgur.com/Rmd5HCL.png"
             },
             {
                 id: 4,
@@ -91,7 +91,7 @@ const AppState = props => {
                 match: "sey",
                 url_github: "",
                 nombre: "Sey",
-                portada: "https://i.imgur.com/SUDKCrv.png"
+                portada: "https://i.imgur.com/86vwQ6G.png"
             },
             {
                 id: 5,

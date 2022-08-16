@@ -26,7 +26,9 @@ const Skills = () => {
                     nombre: "SASS",
                     url_img: "https://i.imgur.com/sWxvBhI.png"
                 },
-            ]
+            ],
+            url_git: "",
+            url_pagina: "https://www.tiendavenus.com/",
         },
         {
             id: 2,
@@ -50,7 +52,9 @@ const Skills = () => {
                     nombre: "SASS",
                     url_img: "https://i.imgur.com/sWxvBhI.png"
                 },
-            ]
+            ],
+            url_git: "",
+            url_pagina: "https://tresdistribuciones.com/",
         },
         {
             id: 3,
@@ -74,7 +78,9 @@ const Skills = () => {
                     nombre: "SASS",
                     url_img: "https://i.imgur.com/sWxvBhI.png"
                 },
-            ]
+            ],
+            url_git: "",
+            url_pagina: "https://www.odibo.mx/",
         },
         {
             id: 4,
@@ -98,7 +104,9 @@ const Skills = () => {
                     nombre: "SASS",
                     url_img: "https://i.imgur.com/sWxvBhI.png"
                 },
-            ]
+            ],
+            url_git: "",
+            url_pagina: "https://www.sey.mx/",
         },
         {
             id: 5,
@@ -132,7 +140,9 @@ const Skills = () => {
                     nombre: "SASS",
                     url_img: "https://i.imgur.com/sWxvBhI.png"
                 },
-            ]
+            ],
+            url_git: "https://github.com/RostCode78/gb-pro-care-services",
+            url_pagina: "https://gdprocareservices.netlify.app/",
         },
         {
             id: 6,
@@ -156,7 +166,9 @@ const Skills = () => {
                     nombre: "React",
                     url_img: "https://i.imgur.com/EZn6kIC.png"
                 },
-            ]
+            ],
+            url_git: "https://github.com/RostCode78/pokedex",
+            url_pagina: "https://pokedex-webloveu.netlify.app/",
         }
     ]
 
@@ -192,11 +204,11 @@ const Skills = () => {
                     ))
                 }
             </div>
-            <div className="boton">
+            {/* <div className="boton">
                 <button>
                     <p>Ver mas proyectos</p>
                 </button>
-            </div>
+            </div> */}
         </div>
     )
 }
