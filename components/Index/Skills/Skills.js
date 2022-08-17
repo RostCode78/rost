@@ -189,7 +189,7 @@ const Skills = () => {
             <div className="content">
                 { responsive 
                 ?
-                    Proyectos.slice(0, 4).map( e => (
+                    Proyectos.slice(0, 6).map( e => (
                         <Card
                             key={ e.id }
                             proyecto={ e }
