@@ -6,7 +6,7 @@ function Rost({ Component, pageProps }) {
     return (
         <AppState>
             <Head>
-                <title>Rost / Jhonattan Tunales</title>
+                <title>Rost78 / Jhonattan Tunales</title>
             </Head>
             <Component
                 {...pageProps}
