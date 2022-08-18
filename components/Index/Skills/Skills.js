@@ -61,7 +61,7 @@ const Skills = () => {
             nombre: "Odibo",
             descripcion: "Rediseño y desarrollo con mas libertad creativa.",
             url_amigable: "odibo",
-            url_img: "https://i.imgur.com/7Z6bsUB.png",
+            url_img: "https://i.imgur.com/Rmd5HCL.png",
             herramientas: [
                 {
                     id: 1,

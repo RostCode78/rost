@@ -20,7 +20,7 @@ const Header = () => {
     const Proyectos = [
         {
             id: 1,
-            url_img: "https://i.imgur.com/oKH8xOm.png",
+            url_img: "https://i.imgur.com/Rmd5HCL.png",
             url_img_responsive: "https://i.imgur.com/Xj0ge2q.jpg",
             texto: "Pop-up que abren modal del producto."
         },
