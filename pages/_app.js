@@ -7,6 +7,7 @@ function Rost({ Component, pageProps }) {
         <AppState>
             <Head>
                 <title>Rost78 / Jhonattan Tunales</title>
+                <link rel="icon" type="image/x-icon" href="/assets/favicon.png"/>
             </Head>
             <Component
                 {...pageProps}
