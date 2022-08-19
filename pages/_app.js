@@ -15,7 +15,7 @@ function Rost({ Component, pageProps }) {
                 <meta property="og:site_name" content="rost78" />
                 <meta property="og:locale" content="es_MX" />
                 <meta property="og:locale:alternate" content="es_MX" />
-                <meta property="og:description" content="Mi nombre es Jhonattan tunales. Me gusta hacer diseño web y luego, llevarlo a codigo, en mis tiempos libres, me gusta jugar Halo y leer a Tolkien." />
+                <meta property="og:description" content="Mi nombre es Jhonattan tunales. Me gusta hacer diseño web y luego, llevarlo a código, en mis tiempos libres, me gusta jugar Halo y leer a Tolkien." />
             </Head>
             <Component
                 {...pageProps}

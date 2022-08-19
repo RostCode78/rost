@@ -12,7 +12,7 @@ const Header = () => {
     const [responsive, setResponsive] = useState(false);
 
     useLayoutEffect(() => {
-        if (window.innerWidth < 800) {
+        if (window.innerWidth > 800) {
             setResponsive(true);
         }
     }, []);
@@ -28,7 +28,7 @@ const Header = () => {
             id: 2,
             url_img: "https://i.imgur.com/zBTCuHO.png",
             url_img_responsive: "https://i.imgur.com/mV0Xsua.jpg",
-            texto: "Rediseño de Ecommerce para mayoristas."
+            texto: "Rediseño de e-commerce para mayoristas."
         },
         {
             id: 3,
@@ -40,13 +40,13 @@ const Header = () => {
             id: 4,
             url_img: "https://i.imgur.com/xHgIwWG.png",
             url_img_responsive: "https://i.imgur.com/u93NaNf.jpg",
-            texto: "Seccion de productos destacados en Venus SexShop."
+            texto: "Sección de productos destacados en Venus Sex-shop."
         },
         {
             id: 5,
             url_img: "https://i.imgur.com/RKHrDIw.png",
             url_img_responsive: "https://i.imgur.com/3z37CIA.jpg",
-            texto: "Pagína hecha con HTML, CSS y JavaScript."
+            texto: "Página hecha con HTML, CSS y JavaScript."
         },
         {
             id: 6,
@@ -106,7 +106,7 @@ const Header = () => {
                                 <SwiperSlide key={ e.id }>
                                     <div className="image-content" key={e.id}>
                                         <div className="overlay"></div>
-                                        <img src={ responsive ? e.url_img_responsive : e.url_img} alt="HOLA" />
+                                        <img src={ responsive ? e.url_img : e.url_img_responsive } alt="HOLA" />
                                     </div>
                                 </SwiperSlide>
                             ))}

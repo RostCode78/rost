@@ -7,7 +7,7 @@ const Skills = () => {
         {
             id: 1,
             nombre: "Venus Sex Shop",
-            descripcion: "Rediseño y desarrollo de la mas grande tienda de juguetes para adultos en Mexico.",
+            descripcion: "Rediseño y desarrollo de la más grande tienda de juguetes para adultos en México.",
             url_amigable: "venus-sex-shop",
             url_img: "https://i.imgur.com/4Uryw7G.png",
             herramientas: [
@@ -59,7 +59,7 @@ const Skills = () => {
         {
             id: 3,
             nombre: "Odibo",
-            descripcion: "Rediseño y desarrollo con mas libertad creativa.",
+            descripcion: "Rediseño y desarrollo con más libertad creativa.",
             url_amigable: "odibo",
             url_img: "https://i.imgur.com/Rmd5HCL.png",
             herramientas: [
@@ -111,7 +111,7 @@ const Skills = () => {
         {
             id: 5,
             nombre: "GD Pro Care Services",
-            descripcion: "Rediseño y desarrollo de la mas grande tienda de juguetes para adultos en Mexico.",
+            descripcion: "Diseño inspirado en mostrar principalmente imágenes de trabajo.",
             url_amigable: "gd-pro-care-services",
             url_img: "https://i.imgur.com/J3sudih.png",
             herramientas: [
@@ -147,7 +147,7 @@ const Skills = () => {
         {
             id: 6,
             nombre: "Pokedex",
-            descripcion: "Rediseño y desarrollo de la mas grande tienda de juguetes para adultos en Mexico.",
+            descripcion: "Diseño especial de cómo me gustaría a mí ver los datos de los pokemon.",
             url_amigable: "pokedex",
             url_img: "https://i.imgur.com/pn0HjtT.png",
             herramientas: [
