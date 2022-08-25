@@ -58,17 +58,12 @@
                 .texto {
                     display: none;
                 }
-                .slide {
+                .slide-desktop {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 90%!important;
                     height: 560px!important;
-                    .image-content {
-                        img {
-                            object-fit: contain!important;
-                        }
-                    }
                 }
             }
             .bottom {
@@ -99,13 +94,40 @@
                     }
                 }
             }
-            .slide {
+            .slide-desktop {
                 width: 720px;
                 height: 480px;
-                .image-content {
+                .image-content-desktop {
                     width: 100%;
                     height: 100%;
                     position: relative;
+                    display: flex;
+                    @media(max-width: 800px) {
+                        display: none;
+                    }
+                    .overlay {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba($grey-100, 0.1);
+                        position: absolute;
+                        z-index: 2;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                }
+                .image-content-movil {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: none;
+                    @media(max-width: 800px) {
+                        display: flex;
+                    }
                     .overlay {
                         width: 100%;
                         height: 100%;

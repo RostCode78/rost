@@ -20,37 +20,37 @@ const Header = () => {
     const Proyectos = [
         {
             id: 1,
-            url_img: "https://i.imgur.com/Rmd5HCL.png",
+            url_img: "/assets/banner-index/desktop-2.webp",
             url_img_responsive: "https://i.imgur.com/Xj0ge2q.jpg",
             texto: "Pop-up que abren modal del producto."
         },
         {
             id: 2,
-            url_img: "https://i.imgur.com/zBTCuHO.png",
+            url_img: "/assets/banner-index/desktop-1.webp",
             url_img_responsive: "https://i.imgur.com/mV0Xsua.jpg",
             texto: "Rediseño de e-commerce para mayoristas."
         },
         {
             id: 3,
-            url_img: "https://i.imgur.com/Q2BNTeW.png",
+            url_img: "/assets/banner-index/desktop-3.webp",
             url_img_responsive: "https://i.imgur.com/LyQmfzS.jpg",
             texto: "Rediseño realizado con React."
         },
         {
             id: 4,
-            url_img: "https://i.imgur.com/xHgIwWG.png",
+            url_img: "/assets/banner-index/desktop-6.webp",
             url_img_responsive: "https://i.imgur.com/u93NaNf.jpg",
             texto: "Sección de productos destacados en Venus Sex-shop."
         },
         {
             id: 5,
-            url_img: "https://i.imgur.com/RKHrDIw.png",
+            url_img: "/assets/banner-index/desktop-4.webp",
             url_img_responsive: "https://i.imgur.com/3z37CIA.jpg",
             texto: "Página hecha con HTML, CSS y JavaScript."
         },
         {
             id: 6,
-            url_img: "https://i.imgur.com/MjXSZnm.png",
+            url_img: "/assets/banner-index/desktop-5.webp",
             url_img_responsive: "https://i.imgur.com/mb5HlQB.jpg",
             texto: "Diseño personal de una Pokedex, desarrollada en React."
         }
@@ -89,7 +89,8 @@ const Header = () => {
                     <div className="texto">
                         <h1>HELLO FRIEND<br/>I'M <span>JHONATTAN</span><br/>FRONT-END DEV<br/><span>FREAK</span> & <span>GEEK</span></h1>
                     </div>
-                    <div className="slide">
+
+                    <div className="slide-desktop">
                         <Swiper
                             loop
                             autoplay={{ 
@@ -100,13 +101,17 @@ const Header = () => {
                             slidesPerView="auto"
                             onSlideChange={ (e) => OnSlideChange(e) }
                             className="mySwiper"
-                        modules={[Autoplay]}
+                            modules={[Autoplay]}
                         >
                             { Proyectos.map(e => (
                                 <SwiperSlide key={ e.id }>
-                                    <div className="image-content" key={e.id}>
+                                    <div className="image-content-desktop" key={e.id}>
                                         <div className="overlay"></div>
-                                        <img src={ responsive ? e.url_img : e.url_img_responsive } alt="HOLA" />
+                                        <img src={ e.url_img } alt="HOLA" />
+                                    </div>
+                                    <div className="image-content-movil" key={e.id}>
+                                        <div className="overlay"></div>
+                                        <img src={ e.url_img_responsive } alt="HOLA" />
                                     </div>
                                 </SwiperSlide>
                             ))}
