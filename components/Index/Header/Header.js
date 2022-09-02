@@ -21,37 +21,37 @@ const Header = () => {
         {
             id: 1,
             url_img: "/assets/banner-index/desktop-2.webp",
-            url_img_responsive: "https://i.imgur.com/Xj0ge2q.jpg",
+            url_img_responsive: "https://i.imgur.com/xUny65E.png",
             texto: "Pop-up que abren modal del producto."
         },
         {
             id: 2,
             url_img: "/assets/banner-index/desktop-1.webp",
-            url_img_responsive: "https://i.imgur.com/mV0Xsua.jpg",
+            url_img_responsive: "https://i.imgur.com/8wFV9FF.png",
             texto: "Rediseño de e-commerce para mayoristas."
         },
         {
             id: 3,
             url_img: "/assets/banner-index/desktop-3.webp",
-            url_img_responsive: "https://i.imgur.com/LyQmfzS.jpg",
+            url_img_responsive: "https://i.imgur.com/KWuMFSd.png",
             texto: "Rediseño realizado con React."
         },
         {
             id: 4,
             url_img: "/assets/banner-index/desktop-6.webp",
-            url_img_responsive: "https://i.imgur.com/u93NaNf.jpg",
+            url_img_responsive: "https://i.imgur.com/dM2nMAG.png",
             texto: "Sección de productos destacados en Venus Sex-shop."
         },
         {
             id: 5,
             url_img: "/assets/banner-index/desktop-4.webp",
-            url_img_responsive: "https://i.imgur.com/3z37CIA.jpg",
+            url_img_responsive: "https://i.imgur.com/6YwSudB.png",
             texto: "Página hecha con HTML, CSS y JavaScript."
         },
         {
             id: 6,
             url_img: "/assets/banner-index/desktop-5.webp",
-            url_img_responsive: "https://i.imgur.com/mb5HlQB.jpg",
+            url_img_responsive: "https://i.imgur.com/t3yupQc.png",
             texto: "Diseño personal de una Pokedex, desarrollada en React."
         }
     ]
