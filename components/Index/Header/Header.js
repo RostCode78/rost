@@ -85,7 +85,9 @@ const Header = () => {
                 <img src="/assets/fondo.png" alt="Un fondo bien perron." />
             </div>
             <div className="content">
+
                 <div className="top">
+
                     <div className="texto">
                         <h1>HELLO FRIEND<br/>I'M <span>JHONATTAN</span><br/>FRONT-END DEV<br/><span>FREAK</span> & <span>GEEK</span></h1>
                     </div>
@@ -117,7 +119,9 @@ const Header = () => {
                             ))}
                         </Swiper>
                     </div>
+                    
                 </div>
+
                 <div className="bottom">
                     <div className="paginacion">
                         { Proyectos.map( e => (
@@ -128,6 +132,7 @@ const Header = () => {
                         <p>{ textoimagen }</p>
                     </div>
                 </div>
+
             </div>
         </div>
     )

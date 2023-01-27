@@ -182,33 +182,35 @@ const Skills = () => {
 
     return (
         <div className="container-skills">
-            <div className="titulo">
-                <h3>Mis <span>Proyectos</span></h3>
-                <p>Me mantengo en <span>continuo aprendizaje</span> y <span>mejorando mis habilidades</span>, aquí puedes ver lo que ya he realizado.</p>
-            </div>
             <div className="content">
-                { responsive 
-                ?
-                    Proyectos.slice(0, 6).map( e => (
-                        <Card
-                            key={ e.id }
-                            proyecto={ e }
-                        />
-                    ))
-                :
-                    Proyectos.slice(0, 6).map( e => (
-                        <Card
-                            key={ e.id }
-                            proyecto={ e }
-                        />
-                    ))
-                }
+                <div className="titulo">
+                    <h3>Mis <span>Proyectos</span></h3>
+                    <p>Me mantengo en <span>continuo aprendizaje</span> y <span>mejorando mis habilidades</span>, aquí puedes ver lo que ya he realizado.</p>
+                </div>
+                <div className="content">
+                    { responsive 
+                    ?
+                        Proyectos.slice(0, 6).map( e => (
+                            <Card
+                                key={ e.id }
+                                proyecto={ e }
+                            />
+                        ))
+                    :
+                        Proyectos.slice(0, 6).map( e => (
+                            <Card
+                                key={ e.id }
+                                proyecto={ e }
+                            />
+                        ))
+                    }
+                </div>
+                {/* <div className="boton">
+                    <button>
+                        <p>Ver mas proyectos</p>
+                    </button>
+                </div> */}
             </div>
-            {/* <div className="boton">
-                <button>
-                    <p>Ver mas proyectos</p>
-                </button>
-            </div> */}
         </div>
     )
 }
