@@ -6,7 +6,7 @@ const Skills = () => {
     const Proyectos = [
         {
             id: 1,
-            nombre: "Proximamente...",
+            nombre: "Tienda Venus",
             descripcion: "Rediseño y desarrollo de la más grande tienda de juguetes para adultos en México.",
             url_amigable: "venus-sex-shop",
             url_img: "https://i.imgur.com/4Uryw7G.png",
