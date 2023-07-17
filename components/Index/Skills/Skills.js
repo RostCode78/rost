@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Card from "../../Card/Card";
+import Card from "../../Cards/Card/Card";
 
 const Skills = () => {
 
@@ -172,13 +172,41 @@ const Skills = () => {
         }
     ]
 
-    const [responsive, setResponsive] = useState(false);
+    /*===================================
+    =    ACTIVAR FILTRO SELECCIONADO    =
+    ===================================*/
 
-    useEffect(() => {
-        if (window.innerWidth < 800) {
-            setResponsive(true);
-        }
-    }, []);
+    const OpcionesProyectos = [
+        {
+            id: 1,
+            titulo: "Todos"
+        },
+        {
+            id: 2,
+            titulo: "Trabajos"
+        },
+        {
+            id: 3,
+            titulo: "Proyectos personales"
+        },
+        {
+            id: 4,
+            titulo: "Cursos / tutoriales"
+        },
+    ]
+
+    const OnClickActivarFiltro = (e) => {
+
+        const ItemSeleccionado = document.querySelector(`._id-${e.id}`);
+        const Restantes = document.querySelectorAll('.item-p');
+
+        Restantes.forEach( e => {
+            e.classList.remove("active");
+        })
+
+        ItemSeleccionado.classList.add("active");
+
+    }
 
     return (
         <div className="container-skills">
@@ -187,16 +215,16 @@ const Skills = () => {
                     <h3>Mis <span>Proyectos</span></h3>
                     <p>Me mantengo en <span>continuo aprendizaje</span> y <span>mejorando mis habilidades</span>, aquí puedes ver lo que ya he realizado.</p>
                 </div>
+                <div className="content-filtros">
+                    { OpcionesProyectos.map( e => (
+                        <div className={`item-p _id-${e.id}`} onClick={ () => OnClickActivarFiltro(e) }>
+                            <p>{ e.titulo }</p>
+                            <div className="line"/>
+                        </div>
+                    ))}
+                </div>
                 <div className="content">
-                    { responsive 
-                    ?
-                        Proyectos.slice(0, 6).map( e => (
-                            <Card
-                                key={ e.id }
-                                proyecto={ e }
-                            />
-                        ))
-                    :
+                    {
                         Proyectos.slice(0, 6).map( e => (
                             <Card
                                 key={ e.id }

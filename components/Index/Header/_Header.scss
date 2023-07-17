@@ -7,7 +7,7 @@
     @media ( max-width: 800px) {
         height: 800px;
     }
-    @media ( max-height: 900px ) {
+    @media ( max-height: 900px) {
         height: 100vh;
     }
     .fondo {
@@ -43,14 +43,15 @@
         }
     }
     .content {
-        width: calc( 100% - 24px );
-        max-width: calc( 1366px - 24px );
-        padding: 0 12px;
+        width: 100%;
+        max-width: 1366px;
+        padding: 0 80px;
         height: auto;
         position: absolute;
         z-index: 2;
         @media( max-width: 800px) {
-            width: calc( 100% - 24px );
+            width: calc( 100% - 24px);
+            padding: 0 12px;
             bottom: inherit;
             display: flex;
             justify-content: center;

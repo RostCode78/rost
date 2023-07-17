@@ -9,14 +9,6 @@ import 'swiper/css';
 
 const Header = () => {
 
-    const [responsive, setResponsive] = useState(false);
-
-    useLayoutEffect(() => {
-        if (window.innerWidth > 800) {
-            setResponsive(true);
-        }
-    }, []);
-
     const Proyectos = [
         {
             id: 1,
@@ -106,12 +98,12 @@ const Header = () => {
                             modules={[Autoplay]}
                         >
                             { Proyectos.map(e => (
-                                <SwiperSlide key={ e.id }>
-                                    <div className="image-content-desktop" key={e.id}>
+                                <SwiperSlide key={e.id}>
+                                    <div className="image-content-desktop">
                                         <div className="overlay"></div>
                                         <img src={ e.url_img } alt="HOLA" />
                                     </div>
-                                    <div className="image-content-movil" key={e.id}>
+                                    <div className="image-content-movil">
                                         <div className="overlay"></div>
                                         <img src={ e.url_img_responsive } alt="HOLA" />
                                     </div>
@@ -125,7 +117,7 @@ const Header = () => {
                 <div className="bottom">
                     <div className="paginacion">
                         { Proyectos.map( e => (
-                            <div key={ e.id } className={ `circle _circle${e.id}`}></div>
+                            <div key={e.id} className={ `circle _circle${e.id}`}></div>
                         ))}
                     </div>
                     <div className="texto">

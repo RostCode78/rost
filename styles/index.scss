@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,4 +25,5 @@ body {
 @import "./pages/PaginaIndex";
 @import "./pages/PaginaProyectos";
 @import "./../components/Navbar/Navbar";
-@import "./../components/Card/Card";
+@import "./../components/Cards/Card/Card";
+@import "./../components/Cards/CardV2/CardV2";

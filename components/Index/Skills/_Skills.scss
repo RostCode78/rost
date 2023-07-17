@@ -7,10 +7,10 @@
     .content {
         width: 100%;
         max-width: 1366px;
+        padding: 24px 80px;
         .titulo {
-            width: calc( 100% - 72px);
+            width: 100%;
             height: auto;
-            padding: 24px 36px;
             h3 {
                 color: $grey-800;
                 @extend %tittle-principal;
@@ -40,16 +40,61 @@
                 }
             }
         }
+        .content-filtros {
+            width: 100%;
+            height: auto;
+            padding: 12px 0;
+            margin: 12px 0;
+            display: flex;
+            flex-direction: row;
+            .item-p {
+                padding: 6px 0;
+                margin: 0 24px;
+                position: relative;
+                cursor: pointer;
+                @extend %flex-center;
+                p {
+                    color: $grey-400;
+                    transition: all .1s ease-in-out;
+                    @extend %small-regular;
+                }
+                .line {
+                    width: 15px;
+                    height: 2px;
+                    background-color: $grey-100;
+                    position: absolute;
+                    bottom: 0;
+                    transition: all .1s ease-in-out;
+                }
+                &.active {
+                    p {
+                        color: $grey-900;
+                    }
+                    .line {
+                        background-color: $grey-900;
+                    }
+                }
+                &:hover {
+                    p {
+                        color: $grey-600;
+                    }
+                    .line {
+                        background-color: $grey-400;
+                    }
+                }
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+        }
         .content {
-            width: calc( 100% - 96px);
+            width: 100%;
             height: auto;
             min-height: 300px;
-            padding: 24px 48px;
             background-color: $grey-100;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
         }
         .boton {
             width: 100%;
@@ -77,6 +122,12 @@
                     @extend %flex-center;
                     @extend %small-regular;
                 }
+            }
+        }
+        @media ( max-width: 800px ) {
+            padding: 24px 12px;
+            .content-filtros {
+                display: none;
             }
         }
     }

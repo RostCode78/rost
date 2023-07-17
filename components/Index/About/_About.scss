@@ -10,13 +10,14 @@
     .content {
         width: 100%;
         max-width: 1366px;
+        padding: 24px 80px;
         justify-content: space-evenly;
         @extend %flex-center-row;
         @media (max-width: 800px) {
             flex-direction: column;
         }
         .left {
-            width: 800px;
+            width: 100%;
             height: auto;
             @media (max-width: 800px) {
                 width: 380px;
@@ -37,8 +38,7 @@
             }
         }
         .right {
-            width: 310px;
-            height: 215px;
+            max-width: 350px;
             @extend %flex-center-column;
             p {
                 color: $grey-800;
