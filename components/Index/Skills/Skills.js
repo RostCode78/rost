@@ -215,14 +215,14 @@ const Skills = () => {
                     <h3>Mis <span>Proyectos</span></h3>
                     <p>Me mantengo en <span>continuo aprendizaje</span> y <span>mejorando mis habilidades</span>, aquí puedes ver lo que ya he realizado.</p>
                 </div>
-                <div className="content-filtros">
+                {/* <div className="content-filtros">
                     { OpcionesProyectos.map( e => (
                         <div className={`item-p _id-${e.id}`} onClick={ () => OnClickActivarFiltro(e) }>
                             <p>{ e.titulo }</p>
                             <div className="line"/>
                         </div>
                     ))}
-                </div>
+                </div> */}
                 <div className="content">
                     {
                         Proyectos.slice(0, 6).map( e => (

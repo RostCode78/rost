@@ -10,6 +10,10 @@ const About = () => {
                 </div>
                 <div className="right">
                     <p>¿Quieres saber más sobre mi o contactarme?</p>
+                    <div className="correo">
+                        <p>Enviame un correo:</p>
+                        <span>zeroxcode78@gmail.com</span>
+                    </div>
                     <div className="boton">
                         <p>Revisa mi Instagram:</p>
                         <a href="https://www.instagram.com/dev_rost78/" target="_blank">
