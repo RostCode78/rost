@@ -5,11 +5,37 @@ const Skills = () => {
 
     const Proyectos = [
         {
+            id: 7,
+            nombre: "Abogado Sanitarista LS",
+            descripcion: "Diseño y desarrollo especial para un abogado sanitarista.",
+            url_amigable: "abogado-sanitarista-ls",
+            url_img: "https://i.imgur.com/8trxcHy.png",
+            herramientas: [
+                {
+                    id: 1,
+                    nombre: "Figma",
+                    url_img: "https://i.imgur.com/EonrQaT.png"
+                },
+                {
+                    id: 5,
+                    nombre: "React",
+                    url_img: "https://i.imgur.com/EZn6kIC.png"
+                },
+                {
+                    id: 6,
+                    nombre: "SASS",
+                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                },
+            ],
+            url_git: "https://github.com/RostCode78/abogado-sanitarista",
+            url_pagina: "https://abogadosanitaristals.com/",
+        },
+        {
             id: 1,
             nombre: "Tienda Venus",
             descripcion: "Rediseño y desarrollo de la más grande tienda de juguetes para adultos en México.",
             url_amigable: "venus-sex-shop",
-            url_img: "https://i.imgur.com/4Uryw7G.png",
+            url_img: "https://i.imgur.com/yBctu9f.png",
             herramientas: [
                 {
                     id: 1,
@@ -35,7 +61,7 @@ const Skills = () => {
             nombre: "Tres Distribuciones",
             descripcion: "Rediseño y desarrollo de una tienda para mayoristas.",
             url_amigable: "tres-distribuciones",
-            url_img: "https://i.imgur.com/MlYDJMR.png|",
+            url_img: "https://i.imgur.com/74Kgr5H.png",
             herramientas: [
                 {
                     id: 1,
@@ -61,7 +87,7 @@ const Skills = () => {
             nombre: "Odibo",
             descripcion: "Rediseño y desarrollo con más libertad creativa.",
             url_amigable: "odibo",
-            url_img: "https://i.imgur.com/Rmd5HCL.png",
+            url_img: "https://i.imgur.com/tYplb7e.png",
             herramientas: [
                 {
                     id: 1,
@@ -87,7 +113,7 @@ const Skills = () => {
             nombre: "Sey",
             descripcion: "Rediseño y desarrollo hecho utilizando ReactJs",
             url_amigable: "sey",
-            url_img: "https://i.imgur.com/SDXrOp9.png",
+            url_img: "https://i.imgur.com/8puboGN.png",
             herramientas: [
                 {
                     id: 1,
@@ -113,7 +139,7 @@ const Skills = () => {
             nombre: "GD Pro Care Services",
             descripcion: "Diseño inspirado en mostrar principalmente imágenes de trabajo.",
             url_amigable: "gd-pro-care-services",
-            url_img: "https://i.imgur.com/J3sudih.png",
+            url_img: "https://i.imgur.com/C5Cvo8D.png",
             herramientas: [
                 {
                     id: 1,
@@ -149,7 +175,7 @@ const Skills = () => {
             nombre: "Pokedex",
             descripcion: "Diseño especial de cómo me gustaría a mí ver los datos de los pokemon.",
             url_amigable: "pokedex",
-            url_img: "https://i.imgur.com/pn0HjtT.png",
+            url_img: "https://i.imgur.com/FZkPpmw.png",
             herramientas: [
                 {
                     id: 1,
@@ -169,7 +195,7 @@ const Skills = () => {
             ],
             url_git: "https://github.com/RostCode78/pokedex",
             url_pagina: "https://pokedex-webloveu.netlify.app/",
-        }
+        },
     ]
 
     /*===================================
@@ -225,7 +251,7 @@ const Skills = () => {
                 </div> */}
                 <div className="content">
                     {
-                        Proyectos.slice(0, 6).map( e => (
+                        Proyectos.map( e => (
                             <Card
                                 key={ e.id }
                                 proyecto={ e }
