@@ -5,7 +5,7 @@ const Skills = () => {
 
     const Proyectos = [
         {
-            id: 7,
+            id: 1,
             nombre: "Abogado Sanitarista LS",
             descripcion: "Diseño y desarrollo especial para un abogado sanitarista.",
             url_amigable: "abogado-sanitarista-ls",
@@ -17,21 +17,21 @@ const Skills = () => {
                     url_img: "https://i.imgur.com/EonrQaT.png"
                 },
                 {
-                    id: 5,
-                    nombre: "React",
-                    url_img: "https://i.imgur.com/EZn6kIC.png"
+                    id: 7,
+                    nombre: "Next",
+                    url_img: "/icons/NEXT.svg"
                 },
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "https://github.com/RostCode78/abogado-sanitarista",
             url_pagina: "https://abogadosanitaristals.com/",
         },
         {
-            id: 1,
+            id: 2,
             nombre: "Tienda Venus",
             descripcion: "Rediseño y desarrollo de la más grande tienda de juguetes para adultos en México.",
             url_amigable: "venus-sex-shop",
@@ -43,21 +43,21 @@ const Skills = () => {
                     url_img: "https://i.imgur.com/EonrQaT.png"
                 },
                 {
-                    id: 5,
-                    nombre: "React",
-                    url_img: "https://i.imgur.com/EZn6kIC.png"
+                    id: 7,
+                    nombre: "Next",
+                    url_img: "/icons/NEXT.svg"
                 },
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "",
             url_pagina: "https://www.tiendavenus.com/",
         },
         {
-            id: 2,
+            id: 3,
             nombre: "Tres Distribuciones",
             descripcion: "Rediseño y desarrollo de una tienda para mayoristas.",
             url_amigable: "tres-distribuciones",
@@ -69,21 +69,21 @@ const Skills = () => {
                     url_img: "https://i.imgur.com/EonrQaT.png"
                 },
                 {
-                    id: 5,
-                    nombre: "React",
-                    url_img: "https://i.imgur.com/EZn6kIC.png"
+                    id: 7,
+                    nombre: "Next",
+                    url_img: "/icons/NEXT.svg"
                 },
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "",
             url_pagina: "https://tresdistribuciones.com/",
         },
         {
-            id: 3,
+            id: 4,
             nombre: "Odibo",
             descripcion: "Rediseño y desarrollo con más libertad creativa.",
             url_amigable: "odibo",
@@ -95,21 +95,21 @@ const Skills = () => {
                     url_img: "https://i.imgur.com/EonrQaT.png"
                 },
                 {
-                    id: 5,
-                    nombre: "React",
-                    url_img: "https://i.imgur.com/EZn6kIC.png"
+                    id: 7,
+                    nombre: "Next",
+                    url_img: "/icons/NEXT.svg"
                 },
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "",
             url_pagina: "https://www.odibo.mx/",
         },
         {
-            id: 4,
+            id: 5,
             nombre: "Sey",
             descripcion: "Rediseño y desarrollo hecho utilizando ReactJs",
             url_amigable: "sey",
@@ -128,14 +128,14 @@ const Skills = () => {
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "",
             url_pagina: "https://www.sey.mx/",
         },
         {
-            id: 5,
+            id: 6,
             nombre: "GD Pro Care Services",
             descripcion: "Diseño inspirado en mostrar principalmente imágenes de trabajo.",
             url_amigable: "gd-pro-care-services",
@@ -164,14 +164,14 @@ const Skills = () => {
                 {
                     id: 6,
                     nombre: "SASS",
-                    url_img: "https://i.imgur.com/sWxvBhI.png"
+                    url_img: "/icons/SASS.svg"
                 },
             ],
             url_git: "https://github.com/RostCode78/gb-pro-care-services",
             url_pagina: "https://gdprocareservices.netlify.app/",
         },
         {
-            id: 6,
+            id: 7,
             nombre: "Pokedex",
             descripcion: "Diseño especial de cómo me gustaría a mí ver los datos de los pokemon.",
             url_amigable: "pokedex",
@@ -195,6 +195,53 @@ const Skills = () => {
             ],
             url_git: "https://github.com/RostCode78/pokedex",
             url_pagina: "https://pokedex-webloveu.netlify.app/",
+        },
+        {
+            id: 8,
+            nombre: "Modal de confimacion",
+            descripcion: "Un componente que se encuentra dentro de TiendaVenus, sirve para confirmar el pago con tarjeta.",
+            url_amigable: "modal-animado",
+            url_img: "https://i.imgur.com/ytzHpyA.png",
+            herramientas: [
+                {
+                    id: 1,
+                    nombre: "Figma",
+                    url_img: "https://i.imgur.com/EonrQaT.png"
+                },
+                {
+                    id: 7,
+                    nombre: "Next",
+                    url_img: "/icons/NEXT.svg"
+                },
+                {
+                    id: 6,
+                    nombre: "SASS",
+                    url_img: "/icons/SASS.svg"
+                },
+            ],
+            url_git: "https://github.com/RostCode78/ModalValidarPago",
+            url_pagina: "https://modalvalidarpago.netlify.app/",
+        },
+        {
+            id: 9,
+            nombre: "Chat con Vue",
+            descripcion: "Esta fue una prueba tecnica donde tenia que hacer un login con validacion y el layout de un chat.",
+            url_amigable: "chat-vue",
+            url_img: "https://i.imgur.com/TzdeT0V.png",
+            herramientas: [
+                {
+                    id: 7,
+                    nombre: "Vue",
+                    url_img: "/icons/VUE.svg"
+                },
+                {
+                    id: 6,
+                    nombre: "SASS",
+                    url_img: "/icons/SASS.svg"
+                },
+            ],
+            url_git: "https://github.com/RostCode78/prueba-vue-chat",
+            url_pagina: "https://prueba-tecnica-vue-2.netlify.app/",
         },
     ]
 
