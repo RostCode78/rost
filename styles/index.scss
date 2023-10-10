@@ -22,6 +22,15 @@ body {
     }
 }
 
+.margen {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    background-color: #6f9fe3;
+    justify-content: center;
+    align-items: center;
+}
+
 @import "./pages/PaginaIndex";
 @import "./pages/PaginaProyectos";
 @import "./../components/Navbar/Navbar";
