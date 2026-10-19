@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/", "destination": "https://rost.aztlanapp.com/", "permanent": true },
+    { "source": "/:path*", "destination": "https://rost.aztlanapp.com/", "permanent": true }
+  ]
+}
